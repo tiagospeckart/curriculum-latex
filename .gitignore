@@ -1,0 +1,33 @@
+ LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# PDF output - uncomment the next line if you want to ignore the output PDF
+# *.pdf
+
+# Latexmk
+*.fdb_latexmk
+*.fls
+
+# BibTeX
+*.bbl
+*.blg
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Environment variables file
+.env

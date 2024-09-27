@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper]{article}
+\input{config/preamble}
+
+% Personal information commands
+\newcommand{\fullname}{}
+\newcommand{\email}{}
+\newcommand{\phone}{}
+\newcommand{\location}{}
+\newcommand{\linkedinurl}{}
+
+% Helper command to print non-empty fields
+\newcommand{\printifnotempty}[1]{%
+  \ifx\relax#1\relax\else#1\fi%
+}
+
+\begin{document}
+
+% Introduction section
+\begin{center}
+    {\huge \textbf{\printifnotempty{\fullname}}}\\[0.5em]
+    {\small 
+      \printifnotempty{\email}%
+      \ifx\relax\email\relax\else\ifx\relax\phone\relax\else\ -- \fi\fi%
+      \printifnotempty{\phone}%
+      \ifx\relax\phone\relax\else\ifx\relax\location\relax\else\ -- \fi\fi%
+      \printifnotempty{\location}%
+      \ifx\relax\location\relax\else\ifx\relax\linkedinurl\relax\else\ -- \fi\fi%
+      \ifx\relax\linkedinurl\relax\else\href{\linkedinurl}{LinkedIn}\fi%
+    }
+\end{center}
+
+\vspace{1em}
+
+\input{chapters/education_pt}
+\input{chapters/experience_pt}
+\input{chapters/skills_pt}
+\input{chapters/projects_pt}
+
+\end{document}

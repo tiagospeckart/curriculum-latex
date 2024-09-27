@@ -1,0 +1,46 @@
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[english,portuguese]{babel}
+
+% Define a toggle for language
+\newif\ifenglish
+\englishfalse % Default to Portuguese
+
+% Command to switch languages
+\newcommand{\switchtoenglish}{%
+\englishtrue%
+\selectlanguage{english}%
+}
+\newcommand{\switchtoportuguese}{%
+\englishfalse%
+\selectlanguage{portuguese}%
+}
+
+% Page layout
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+% Custom commands
+\newcommand{\sectionheader}[1]{%
+\vspace{0.5cm}%
+\textbf{\Large #1}%
+\vspace{0.3cm}%
+}
+
+\newcommand{\jobentry}[4]{%
+\textbf{#1} \hfill #2 \\%
+\textit{#3} \hfill #4 \\%
+}
+
+% Define the school command
+\newcommand{\school}[5]{%
+\textbf{#1} \hfill #2 \\%
+\textit{#3} \hfill #4 \\%
+#5 \\%
+}
+
+% Other document-wide settings
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
