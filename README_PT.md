@@ -43,8 +43,8 @@ Para usar este projeto, você precisará do seguinte software instalado em seu s
 
 1. Clone este repositório:
    ```
-   git clone https://github.com/seunomedeusuario/curriculo-bilingue.git
-   cd curriculo-bilingue
+   git clone https://github.com/tiagospeckart/curriculum-latex.git
+   cd curriculum-latex
    ```
 
 2. Certifique-se de ter todo o software necessário instalado.
