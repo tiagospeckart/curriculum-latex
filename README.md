@@ -41,8 +41,8 @@ To use this project, you'll need the following software installed on your system
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/bilingual-cv.git
-   cd bilingual-cv
+   git clone https://github.com/tiagospeckart/curriculum-latex.git
+   cd curriculum-latex
    ```
 
 2. Ensure you have all the required software installed.
